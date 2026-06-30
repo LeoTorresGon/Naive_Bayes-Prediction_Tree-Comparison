@@ -62,11 +62,6 @@ acc_rf, f1_rf, kap_rf = imprimir_resumo("Random Forest", y_test, y_pred_rf)
 print("\n" + "="*45)
 acc_xgb, f1_xgb, kap_xgb = imprimir_resumo("XGBoost", y_test, y_pred_xgb)
 
-
-import pandas as pd
-
-import pandas as pd
-
 def imprimir_tabela_pandas(dados_modelos):
     df = pd.DataFrame(dados_modelos).map(lambda x: f"{x:.2f}")
     
@@ -76,7 +71,6 @@ def imprimir_tabela_pandas(dados_modelos):
     print(df.to_string())
     print("="*55 + "\n")
 
-# --- Como usar ---
 resultados = {
     'NAIVE BAYES': {'Acurácia': acc_nb, 'F1-Score (Weighted)': f1_nb, 'Kappa de Cohen': kap_nb},
     'ÁRVORE':      {'Acurácia': acc_nb, 'F1-Score (Weighted)': f1_tr, 'Kappa de Cohen': kap_tr},
