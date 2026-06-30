@@ -4,9 +4,9 @@ A Machine Learning project focused on analyzing and predicting the overall impac
 ## Overview
 This project utilizes a dataset containing social media usage patterns and demographic information to classify the Overall_Impact of social media into three categories:
 
-- Positive (1)
-- Neutral (0)
-- Negative (-1)
+- Positive (2)
+- Neutral (1)
+- Negative (0)
 
 ## Features & Preprocessing
 The model processes the following features:
@@ -26,6 +26,9 @@ A probabilistic classifier based on Bayes' Theorem, assuming independence betwee
 2. Decision Tree Classifier
 A non-parametric supervised learning method. It creates a model that predicts the value of the target variable by learning simple decision rules inferred from the data features.
 
+3. RandomForest
+
+4. XGBoost
 
 ## Evaluation Metrics
 The following metrics were implemented:
